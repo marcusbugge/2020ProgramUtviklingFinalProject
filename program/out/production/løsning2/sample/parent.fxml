@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="268.0" prefWidth="214.0" xmlns="http://javafx.com/javafx/8.0.221" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ParentController">
+   <children>
+      <TableView fx:id="configTable" prefHeight="282.0" prefWidth="214.0">
+        <columns>
+          <TableColumn prefWidth="212.0" text="Components">
+              <cellValueFactory>
+                  <PropertyValueFactory property="del" />
+              </cellValueFactory>
+          </TableColumn>
+          <TableColumn minWidth="0.0" prefWidth="0.0" text="Price">
+              <cellValueFactory>
+                  <PropertyValueFactory property="pris" />
+              </cellValueFactory>
+          </TableColumn>
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
